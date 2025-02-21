@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Elite Store</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html" class="cart">🛒 Cart <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow Section -->
+    <section id="home">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="./images/image 1 luxury watch.jpg" alt="Slide 1">
+            </div>
+            <div class="slide fade">
+                <img src="./images/image 2 smart head phones.jpg" alt="Slide 2">
+            </div>
+            <div class="slide fade">
+                <img src="./images/pexels-mnzoutfits-1598505.jpg" alt="Slide 3">
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="hero">
+            <h1>Premium Products, Just for You</h1>
+            <p>Shop the latest and trendiest products now.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="./images/image 1 luxury watch.jpg" alt="Product 1">
+                <h3>Luxury Watch</h3>
+                <p>$299.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./images/image 2 smart head phones.jpg" alt="Product 2">
+                <h3>Smart Headphones</h3>
+                <p>$199.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="./images/image 3 styles sneaker.jpg" alt="Product 3">
+                <h3>Stylish Sneakers</h3>
+                <p>$149.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Elite Store | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
