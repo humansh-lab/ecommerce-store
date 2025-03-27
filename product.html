@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxury Ecom</title>
+    <title>Product - Luxury Ecom</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,30 +21,19 @@
         </nav>
     </header>
 
-    <section class="hero fade-in">
-        <h1>Luxury Awaits You</h1>
-        <p>Premium perfumes and fashion for everyone.</p>
-        <a href="shop.html" class="btn">Shop Now</a>
-    </section>
-
-    <section class="products fade-in">
-        <h2>Featured Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <a href="product.html?id=1">
-                    <img src="images/chanel-no5.jpg" alt="Chanel No. 5">
-                    <h3>Chanel No. 5</h3>
-                    <p>$150</p>
-                    <button class="card-btn">View Details</button>
-                </a>
-            </div>
-            <div class="product-card">
-                <a href="product.html?id=2">
-                    <img src="images/gucci-bloom.jpg" alt="Gucci Bloom">
-                    <h3>Gucci Bloom</h3>
-                    <p>$180</p>
-                    <button class="card-btn">View Details</button>
-                </a>
+    <section class="product-details fade-in">
+        <div class="product-container">
+            <img id="product-image" src="" alt="Product">
+            <div class="product-info">
+                <h1 id="product-name"></h1>
+                <p id="product-price"></p>
+                <p id="product-desc"></p>
+                <ul>
+                    <li><strong>Brand:</strong> <span id="product-brand"></span></li>
+                    <li><strong>Size:</strong> <span id="product-size"></span></li>
+                    <li><strong>Type:</strong> <span id="product-type"></span></li>
+                </ul>
+                <button class="card-btn" onclick="addToCart()">Add to Cart</button>
             </div>
         </div>
     </section>
